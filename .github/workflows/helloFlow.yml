@@ -1,7 +1,10 @@
 name: Hello Flow
+
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/3 * * * *'
+
 jobs:
   first-job:
     runs-on: ubuntu-latest
